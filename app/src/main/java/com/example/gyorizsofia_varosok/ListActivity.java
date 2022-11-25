@@ -3,6 +3,7 @@ package com.example.gyorizsofia_varosok;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -42,6 +43,7 @@ public class ListActivity extends AppCompatActivity {
     public void init(){
         buttonback = findViewById(R.id.buttonback);
         jsondata = findViewById(R.id.jsondata);
+        jsondata.setMovementMethod(new ScrollingMovementMethod());
     }
 
     private void formBack() {

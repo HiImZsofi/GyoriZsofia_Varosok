@@ -43,9 +43,9 @@ public class Varos {
 
     @Override
     public String toString() {
-        return "Varos: " +
-                "nev='" + nev + '\'' +
-                ", orszag='" + orszag + '\'' +
-                ", lakossag=" + lakossag;
+        return "Varos: { " +
+                "nev" + ":" + nev + "\n" +
+                "orszag" + ":" + orszag + "\n" +
+                "lakossag" + ":" + lakossag + "}";
     }
 }
