@@ -40,4 +40,12 @@ public class Varos {
     public void setLakossag(int lakossag) {
         this.lakossag = lakossag;
     }
+
+    @Override
+    public String toString() {
+        return "Varos: " +
+                "nev='" + nev + '\'' +
+                ", orszag='" + orszag + '\'' +
+                ", lakossag=" + lakossag;
+    }
 }

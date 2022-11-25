@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jsondata"></TextView>
 
     <Button
         android:id="@+id/buttonback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mégse" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/jsondata"></TextView>
+        android:text="Mégse"/>
 
 </LinearLayout>

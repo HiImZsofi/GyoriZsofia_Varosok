@@ -15,6 +15,7 @@ public class InsertActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert);
+        init();
 
         buttonback.setOnClickListener(new View.OnClickListener() {
             @Override
