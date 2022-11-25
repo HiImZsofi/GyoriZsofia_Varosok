@@ -2,7 +2,9 @@ package com.example.gyorizsofia_varosok;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -16,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText dataid;
     private Button buttonadd;
     private Button buttonlist;
-    private ListView listviewdata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         init();
 
+        buttonlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, ListActivity.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
 
+        buttonadd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, InsertActivity.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
     }
 
 
@@ -34,6 +49,5 @@ public class MainActivity extends AppCompatActivity {
         dataid = findViewById(R.id.dataid);
         buttonadd = findViewById(R.id.buttonadd);
         buttonlist = findViewById(R.id.buttonlist);
-        listviewdata = findViewById(R.id.listviewdata);
     }
 }
